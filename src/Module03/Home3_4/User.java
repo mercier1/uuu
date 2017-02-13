@@ -17,7 +17,6 @@ public class User {
         this.currency = currency;
     }
 
-    // public User(){}
     public String getName() {
         return name;
     }
@@ -66,27 +65,28 @@ public class User {
         this.currency = currency;
     }
 
-
     public void paySalary() {
         salary += balance;
+        System.out.println("баланс+зарплата = " + salary);
     }
 
-    public void withdraw(int summ) {         //снимает деньги с баланса с комиссией 5%, если сумма < 1000 и комиссией 10% в других случаях
+    public void withdraw(int balance, int summ) {         //снимает деньги с баланса с комиссией 5%, если сумма < 1000 и комиссией 10% в других случаях
         if (balance < 1000) {
             summ -= balance * 0.05;
         } else {
             summ -= balance * 0.1;
         }
+        System.out.println("cумма после снятия=" + summ);
     }
 
     public void companyNameLenght() {   //вычисляет длину имя компании
-        companyName = "name";
+        companyName = "name11";
         int length = companyName.length();
+        System.out.println(length);
     }
 
     public void monthIncreaser(int addMonth) {     //увеличивает monthsOfEmployment на addMonth
-        monthsOfEmpl += addMonth;
+        addMonth = monthsOfEmpl + addMonth;
+        System.out.println(addMonth);
     }
-
-
 }
