@@ -2,7 +2,7 @@ package Module03.Home3_3;
 
 public class Course {
     private int startDate;
-    private  String name;
+    private String name;
     private int hoursDuration;
     private String teacherName;
 

@@ -1,7 +1,7 @@
 package Module03.Home3_3;
 
 public class CollegeStudent extends Student {
-   private String collegeName;
+    private String collegeName;
     private int rating;
     private long id;
 
